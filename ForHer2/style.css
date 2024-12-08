@@ -37,8 +37,20 @@ header {
     filter: brightness(0.7);
 }
 
-
 h1 {
+    color: #333;
+}
+
+.slide-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.slide-5 .message {
+    margin-top: 10px; 
+    font-size: 1rem;
     color: #333;
 }
 
@@ -125,7 +137,19 @@ h1 {
     }
 
     .message {
-        font-size: 0.8rem;
+        font-size: 0.4rem;
         padding: 8px;
+    }
+
+    .img-5, .message-5 {
+        display: block; 
+        text-align: center; 
+        margin: 0 auto; 
+    }
+
+    .message-5 {
+        margin-top: 10px; 
+        font-size: 1rem; 
+        padding: 10px;
     }
 }
