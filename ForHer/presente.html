@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário Romântico</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <a id="btnVoltar" class="whiteButton" href="../projeto.html">Voltar</a>
+    <div class="container">
+        <h1 id="questionarioTitulo">Questionário Romântico</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <input id="text-input" class="input" type="text" style="display: none;">
+        <button id="startButton" class="answer-btn" onclick="startQuiz()">Iniciar Questionário</button>
+        <button id="submit" class="answer-btn" disabled>Responder</button>
+      <div id="finalContent">
+        <a id="downloadLink" class="download-link" href="Amor.txt">Leia</a>
+        <p id="finalMessage">Eu te amo até além do horizonte! ❤️</p>
+        <img id="finalGif" src="Confetes.gif" alt="Descrição do GIF" class="final-gif animate__animated">
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>

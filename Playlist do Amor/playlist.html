@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist do Amor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <a id="btnVoltar" class="whiteButton" href="../projeto.html">Voltar</a>
+    <h1>Playlist do Amor</h1>
+    <div id="container">
+        <div id="messageContainer">
+            <p id="message">Clique em uma música para começar!</p>
+        </div>
+        <div id="playlist">
+            <button onclick="playSong(0)"> Música 1 💖</button>
+            <button onclick="playSong(1)"> Música 2 💖</button>
+            <button onclick="playSong(2)"> Música 3 💖</button>
+            <button onclick="playSong(3)"> Música 4 💖</button>
+            <button onclick="playSong(4)"> Música 5 💖</button>
+        </div>
+        <iframe id="musicPlayer" 
+                style="display: none;" 
+                src="" 
+                width="300" 
+                height="80" 
+                frameborder="0" 
+                allowtransparency="true" 
+                allow="encrypted-media">
+        </iframe>
+    </div>
+</body>
+</html>

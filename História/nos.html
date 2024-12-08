@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Love Story</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <style type="text/css">
+      @font-face {
+        font-family: digit;
+        src: url("digital.ttf") format("truetype");
+      }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </head>
+
+  <body>
+    <a id="btnVoltar" class="whiteButton" href="../projeto.html">Voltar</a>
+    <div id="mainDiv">
+      <div id="content">
+        <div id="code">
+          <span class="comments">##</span><br />
+          <span class="comments"># Eu sou um programador,</span><br />
+          <span class="comments"
+            ># Então eu escrevi esse código para contar a nossa história.</span
+          ><br />
+          <span class="comments">##</span><br />
+          eu = Boy(<span class="string">"Leonardo"</span>);<br />
+          você = Girl(<span class="string">"Clara"</span>);<br />
+          <span class="comments"
+            ># 04 de novembro, 2020, eu conheci você pela internet. </span
+          ><br />
+          i.meet(u)<br />
+          <span class="comments"
+            ># Depois, eu disse a você o quanto gostava de ti.</span
+          ><br />
+          i.confess(u)<br />
+          <span class="comments"
+            ># 29 de julho, 2021, e com muitos mais pedidos, você virou minha
+            namorada.</span
+          ><br />
+          u.accepted(i)<br />
+          <span class="comments"
+            ># Desde então, conversamos e mesmo longe temos sentimentos
+            fortíssimos. </span
+          ><br />
+          love(u, i)<br />
+          <span class="comments"># Eu me divirto sempre com você.</span><br />
+          enjoying(u, i)<br />
+          <span class="comments"
+            ># Eu faço tudo pra te ver feliz, e você sempre me deixa feliz. </span
+          ><br />
+          doing(u, i)<br />
+          <span class="comments"># Nós assistimos filmes juntos. </span><br />
+          watching(u, i)<br />
+          <span class="comments"
+            ># Nós jogamos joguinhos juntos, e você é muito competitiva. </span
+          ><br />
+          playing(u, i)<br />
+          <span class="comments"># As vezes existe conflitos entre nós. </span
+          ><br />
+          conflict(u, i, sometimes=<span class="keyword">True</span>)<br />
+          <span class="comments"
+            ># Mas nós tentamos e fazemos tudo, vivendo em harmonia.</span
+          ><br />
+          u.in_harmony_with(i) <br />
+          i.in_harmony_with(u) <br />
+          <span class="comments"># Você é perfeita na minha vida.</span><br />
+          while <span class="keyword">True</span>:<br />
+          <span class="placeholder"></span
+          ><span class="keyword">if</span> u.with(i):<br />
+          <span class="placeholder"></span><span class="placeholder"></span>u =
+          everything<br />
+          <span class="placeholder"></span
+          ><span class="keyword">else</span>:<br />
+          <span class="placeholder"></span
+          ><span class="placeholder"></span>everything = u<br />
+          <span class="comments"
+            ># Esperando eu casar com você, seremos o casal mais feliz do mundo. </span
+          ><br />
+          i.marry(u, in_the_future=<span class="keyword">True</span>)<br />
+          i.live_happily_forever_with(u)<br />
+          <span class="comments"># Eu te amo pra sempre.</span><br />
+        </div>
+        <div id="loveHeart">
+          <canvas id="garden"></canvas>
+          <div id="words">
+            <div id="messages">
+              Clara, eu te amo muito.
+              <div id="elapseClock"></div>
+            </div>
+            <div id="loveu">
+              Eu te amo pra todo sempre.<br />
+              <div class="signature">- Leonardo | Eu mesmo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var offsetX = $("#loveHeart").width() / 2;
+      var offsetY = $("#loveHeart").height() / 2 - 55;
+      var together = new Date();
+      // 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
+      together.setFullYear(2021, 7, 29);
+      together.setHours(15);
+      together.setMinutes(0);
+      together.setSeconds(0);
+      together.setMilliseconds(0);
+
+      if (!document.createElement("canvas").getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML =
+          "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none");
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+      } else {
+        setTimeout(function () {
+          startHeartAnimation();
+        }, 5000);
+
+        timeElapse(together);
+        setInterval(function () {
+          timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+      }
+    </script>
+  </body>
+</html>

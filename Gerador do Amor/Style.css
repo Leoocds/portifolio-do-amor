@@ -1,0 +1,96 @@
+@font-face {
+	font-family: "Amor";
+	src: url("LoversQuarrel-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "By";
+	src: url("Cookiemonster-gv11.ttf") format("truetype");
+}
+
+body {
+    background-color: #580000;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#btnVoltar {
+    font-family: "amor";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: antiquewhite;
+    padding: 10px;
+    border-color: #000000;
+    border-width: 0px;
+    border-radius: 6px;
+    background-color: #000000;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+#btnVoltar:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    filter: brightness(0.7);
+}
+
+h1 {
+    font-family: "Amor";
+    font-size: 50px;
+    color: #000000;
+}
+
+#generateButton {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #000000;
+    border-color: #000000;
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.6s
+}
+
+#generateButton:hover {
+    background-color: #353535;
+    transform: scale(1.2);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: Arial;
+    color: #000000;
+    font-size: 18px;
+}
+
+.we {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.we-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.we-container a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Dancing+Script:wght@500&display=swap');
+
+body {
+    min-height: 120vh;
+    margin: 0;
+    background-image: url(Coração.png);
+	background-position: center;
+	background-size: 1000px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button {
+	background-color: #ffffff; /* cor de fundo verde */
+	border: none; /* sem borda */
+	color: rgb(0, 0, 0); /* cor do texto branco */
+	padding: 10px 20px; /* espaço interno do botão */
+	text-align: center; /* centralizar texto */
+	text-decoration: none; /* sem sublinhado */
+	display: inline-block; /* exibir como bloco */
+	font-size: 16px; /* tamanho da fonte */
+	margin: 4px 2px; /* margem externa */
+	cursor: pointer; /* cursor de mouse como ponteiro */
+	border-radius: 10px; /* borda arredondada */
+  }
+
+button:hover {
+	background-color: #008cff;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li {
+	margin-right: 10px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	margin: 20px;
+}
+
+footer {
+	background-color: #000000;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	text-align: center;
+}
+
+h1 {
+		color: #000000;
+		font-size: 30px;
+		font-size: bold;
+		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+		text-align: center;
+}

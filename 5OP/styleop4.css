@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Dancing+Script:wght@500&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#2388fc, #fff);
+    padding: 60px;
+    cursor: pointer;
+}
+
+h1{
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    color: #000000;
+    font-size: 30px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: center;
+}

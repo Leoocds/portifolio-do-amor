@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heart-text {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px; 
+    -webkit-background-clip: text;
+    animation: heartbeat 1s infinite;
+    background-clip: text; 
+    display: inline-block; 
+    padding: 10px;
+}
+
+#start-button {
+    display: inline-block;
+    margin-top: 30px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b349ff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #0084ff;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+        text-shadow: 0 0 5px #00fff0;
+    }
+    50% {
+        transform: scale(1.1);
+        text-shadow: 0 0 5px #b349ff;
+    }
+}

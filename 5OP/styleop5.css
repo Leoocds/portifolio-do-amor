@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Dancing+Script:wght@500&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(Jóia.png);
+    background-position: center;
+    background-size: contain;
+    padding: 60px;
+    cursor: pointer;
+}
+
+h1{
+    background-color: #fff; /* Cor de fundo branca */
+    background-position: center;
+    padding: 10px; /* Espaço entre o texto e a borda do quadrado */
+    display: inline-block; /* Faz com que o quadrado se ajuste ao tamanho do texto */
+    border: 2px solid #00000000; /* Borda preta de 2px */
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 10px; /* Espaço entre o texto e a borda do quadrado */
+    display: inline-block; /* Faz com que o quadrado se ajuste ao tamanho do texto */
+    border: 2px solid #00000000; /* Borda preta de 2px */
+    background-position: center;
+    color: #000000;
+    font-size: 30px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: center;
+}

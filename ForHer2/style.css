@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffcccb;
+}
+
+#btnVoltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: antiquewhite;
+    padding: 10px;
+    border-color: #000000;
+    border-width: 0px;
+    border-radius: 6px;
+    background-color: #ff0000;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+#btnVoltar:hover {
+    background-color: rgb(134, 1, 1);
+    color: white;
+    filter: brightness(0.7);
+}
+
+
+h1 {
+    color: #333;
+}
+
+.message {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.carousel {
+    max-width: 1200px;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 700px;
+    height: 600px;
+    display: none;
+    object-fit: contain;
+}
+
+.carousel .message {
+    text-align: center;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-button {
+    background-color: #970000;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.carousel-button:hover {
+    background-color: #ff4d4d;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.carousel-button:active {
+    background-color: #ff3333;
+}
+
+#link-musica {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel img {
+        width: 350px;
+        height: 300px;
+        display: none;
+        object-fit: contain;
+    }
+
+    .message {
+        font-size: 16px;
+        
+    }
+}

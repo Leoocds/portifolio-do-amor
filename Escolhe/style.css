@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Dancing+Script:wght@500&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, rgb(38, 150, 255), rgb(240, 54, 82));
+    padding: 60px;
+    cursor: pointer;
+}
+
+#btnVoltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-color: #ffffff;
+    border-width: 0px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+#btnVoltar:hover {
+    background-color: #ff0000;
+    color: white;
+    filter: brightness(0.7);
+}
+
+#titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.whiteButton {
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.whiteButton:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.whiteButton:hover {
+    background-color: #ffffff;
+}
+
+.whiteButton:focus {
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0 0 3px;
+    outline: none;
+}
+
+.whiteButton:disabled {
+    background-color: #ffffff;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.whiteButton:active {
+    background-color: #ff0000;
+    box-shadow: rgba(0, 0, 0, 0.151255) 0 1px 0 inset;
+
+}
