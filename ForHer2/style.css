@@ -116,7 +116,7 @@ h1 {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .carousel img {
         width: 350px;
         height: 300px;
@@ -125,7 +125,7 @@ h1 {
     }
 
     .message {
-        font-size: 16px;
-        
+        font-size: 0.8rem;
+        padding: 8px;
     }
 }
