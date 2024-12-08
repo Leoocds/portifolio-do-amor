@@ -55,6 +55,7 @@ h1 {
 }
 
 .message {
+    display: none;
     margin: 20px 0;
     background-color: #fff;
     padding: 50px;
